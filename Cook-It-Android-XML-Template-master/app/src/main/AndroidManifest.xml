@@ -23,13 +23,17 @@
             android:name=".Main"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Detail"
+        <activity
+            android:name=".Detail"
             android:theme="@style/Full"
             android:windowSoftInputMode="adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Main"/>
+                android:value=".Main" />
         </activity>
+        <activity android:name=".Telas.Login_TL" />
+        <activity android:name=".Telas.Cadastro_Manter_TL" />
+        <activity android:name=".Telas.Cadastro_Geral_Manter_TL"></activity>
     </application>
 
 </manifest>

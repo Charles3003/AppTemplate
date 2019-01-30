@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telas.Cadastro_Geral_Manter_TL">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPinkTrans" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@android:style/Widget.DeviceDefault.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:autoText="false"
+            android:freezesText="false"
+            android:gravity="center"
+            android:text="Cadastro"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Regular"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btn_Cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Senha"
+            android:layout_marginTop="38dp"
+            android:text="Salvar" />
+
+        <EditText
+            android:id="@+id/txt_Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:ems="10"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/txt_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Nome"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="email@email.com"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/cardview_light_background" />
+
+        <EditText
+            android:id="@+id/txt_Senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Email"
+            android:layout_alignStart="@+id/txt_Nome"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColorHint="@color/cardview_light_background" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

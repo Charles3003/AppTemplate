@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/new_recipe"
-            android:title="NEW RECIPE" />
+            android:title="DISTRIBUIDORAS" />
         <item
             android:id="@+id/recipes"
-            android:title="RECIPES" />
+            android:title="PEDIDOS" />
         <item
             android:id="@+id/saved"
-            android:title="SAVED RECIPES" />
+            android:title="MEU ENDEREÇO" />
         <item
             android:id="@+id/shop_list"
-            android:title="SHOPPING LIST" />
+            android:title="MEUS DADOS PESSOAIS" />
         <item
             android:id="@+id/setting"
-            android:title="SETTINGS" />
+            android:title="CONFIGURAÇÃO" />
     </group>
 </menu>

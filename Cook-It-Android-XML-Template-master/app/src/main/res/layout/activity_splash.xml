@@ -4,26 +4,50 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.uiresource.cookit.Splash"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg"
+    tools:context="com.uiresource.cookit.Splash">
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPinkTrans"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPinkTrans" />
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_marginTop="@dimen/space56"
-        android:layout_centerHorizontal="true"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/space16"
+        android:layout_width="216dp"
+        android:layout_height="196dp"
+        android:layout_below="@+id/null"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Cook it"
-        android:textSize="@dimen/h2"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="236dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        style="@android:style/Widget.DeviceDefault.TextView"
+        android:layout_width="280dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/null"
+        android:layout_below="@+id/null"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="101dp"
+        android:gravity="center"
+        android:text="AiCerva"
+        android:textAppearance="@style/Regular"
         android:textColor="@android:color/white"
-        android:textAppearance="@style/Regular"/>
+        android:textSize="36sp"
+        android:textStyle="normal|bold" />
 </RelativeLayout>

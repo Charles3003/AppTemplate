@@ -55,21 +55,21 @@ public class Detail extends BaseActivity implements PreparationAdapter.ViewHolde
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitleEnabled(false);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerShopping);
+        //recyclerView = (RecyclerView) findViewById(R.id.recyclerShopping);
 
         mAdapter = new ShoppingAdapter(generateShopping(), this);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
+        //recyclerView.setLayoutManager(mLayoutManager);
+        //recyclerView.setItemAnimator(new DefaultItemAnimator());
+       // recyclerView.setAdapter(mAdapter);
 
-        recyclerViewPreparation = (RecyclerView) findViewById(R.id.recyclerPreparation);
+        //recyclerViewPreparation = (RecyclerView) findViewById(R.id.recyclerPreparation);
 
         mAdapterPreparation = new PreparationAdapter(getBaseContext(), generatePreparation(),this);
         LinearLayoutManager mLayoutManagerPreparation = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerViewPreparation.setLayoutManager(mLayoutManagerPreparation);
-        recyclerViewPreparation.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewPreparation.setAdapter(mAdapterPreparation);
+       // recyclerViewPreparation.setLayoutManager(mLayoutManagerPreparation);
+        //recyclerViewPreparation.setItemAnimator(new DefaultItemAnimator());
+       // recyclerViewPreparation.setAdapter(mAdapterPreparation);
 
         recyclerViewComments = (RecyclerView) findViewById(R.id.recyclerComment);
 

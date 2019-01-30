@@ -1,6 +1,7 @@
 package com.uiresource.cookit;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Handler;
@@ -9,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.uiresource.cookit.Telas.Login_TL;
 
 public class Splash extends BaseActivity {
 
@@ -23,13 +26,20 @@ public class Splash extends BaseActivity {
 
         changeStatusBarColor();
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Splash.this, Main.class));
-                finish();
+                SharedPreferences oSharedPreferences = getSharedPreferences("usuario_logado", 0);
+                if ((oSharedPreferences.contains("email_usuario"))) {
+                    Intent intent = new Intent(Splash.this, Main.class);
+                    startActivity(intent);
+                } else {
+                    startActivity(new Intent(Splash.this, Login_TL.class));
+                    finish();
+                }
             }
-        }, 3*1000);
+        }, 3 * 1000);
     }
-
 }
+
